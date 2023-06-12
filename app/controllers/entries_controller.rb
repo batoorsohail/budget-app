@@ -4,6 +4,7 @@ class EntriesController < ApplicationController
 
   # GET /entries or /entries.json
   def index
+    @user = current_user
     @entries = Entry.all
   end
 
