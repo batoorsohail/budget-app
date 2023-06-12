@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
+  devise_for :users
+  
   resources :users do
     resources :groups, path: 'categories', only: %i[index show new create edit update destroy] do
       resources :entries, path: 'transactions', only: %i[index show new create edit update destroy]
