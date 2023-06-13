@@ -1,8 +1,10 @@
 class EntriesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_entry, only: %i[show edit update destroy]
 
   # GET /entries or /entries.json
   def index
+    @user = current_user
     @entries = Entry.all
   end
 
