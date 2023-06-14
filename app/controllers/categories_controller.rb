@@ -1,58 +1,62 @@
-class GroupsController < ApplicationController
+class CategoriesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_group, only: %i[show edit update destroy]
+  before_action :set_category, only: %i[show edit update destroy]
 
-  # GET /groups or /groups.json
+  # GET /categories or /categories.json
   def index
-    @user = current_user
-    @groups = Group.all
+    @categories = Category.where(author_id: current_user.id) || []
   end
 
-  # GET /groups/1 or /groups/1.json
-  def show; end
+  # GET /categories/1 or /categories/1.json
+  def show
+    @category = Category.find(params[:id])
+    @entities = @category.entities
+    authorize! :read, @category
+  end
 
-  # GET /groups/new
+  # GET /categories/new
   def new
-    @group = Group.new
+    @category = Category.new
   end
 
-  # GET /groups/1/edit
+  # GET /categories/1/edit
   def edit; end
 
-  # POST /groups or /groups.json
+  # POST /categories or /categories.json
   def create
-    @group = Group.new(group_params)
+    @category = Category.new(category_params)
 
     respond_to do |format|
-      if @group.save
-        format.html { redirect_to group_url(@group), notice: 'Group was successfully created.' }
-        format.json { render :show, status: :created, location: @group }
+      if @category.save
+        format.html { redirect_to categories_url, notice: 'Category was successfully created.' }
+        format.json { render :show, status: :created, location: @category }
       else
         format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @group.errors, status: :unprocessable_entity }
+        format.json { render json: @category.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PATCH/PUT /groups/1 or /groups/1.json
+  # PATCH/PUT /categories/1 or /categories/1.json
   def update
     respond_to do |format|
-      if @group.update(group_params)
-        format.html { redirect_to group_url(@group), notice: 'Group was successfully updated.' }
-        format.json { render :show, status: :ok, location: @group }
+      if @category.update(category_params)
+        format.html { redirect_to category_url(@category), notice: 'Category was successfully updated.' }
+        format.json { render :show, status: :ok, location: @category }
       else
         format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @group.errors, status: :unprocessable_entity }
+        format.json { render json: @category.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # DELETE /groups/1 or /groups/1.json
+  # DELETE /categories/1 or /categories/1.json
   def destroy
-    @group.destroy
+    @category = Category.find(params[:id])
+    @category.destroy
 
     respond_to do |format|
-      format.html { redirect_to groups_url, notice: 'Group was successfully destroyed.' }
+      format.html { redirect_to categories_url, notice: 'Category was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -60,12 +64,12 @@ class GroupsController < ApplicationController
   private
 
   # Use callbacks to share common setup or constraints between actions.
-  def set_group
-    @group = Group.find(params[:id])
+  def set_category
+    @category = Category.find(params[:id])
   end
 
   # Only allow a list of trusted parameters through.
-  def group_params
-    params.require(:group).permit(:name, :icon)
+  def category_params
+    params.require(:category).permit(:name, :icon).merge(author_id: current_user.id)
   end
 end
