@@ -1,134 +1,147 @@
+<a name="readme-top"></a>
+
+# Blog App
+
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
-  - [📖 TDD Project ](#-oop-school-library--)
-  - [🛠 Built With ](#-built-with-)
-  - [Tech Stack ](#tech-stack-)
-  - [Key Features](#key-features)
-  - [💻 Getting Started ](#-getting-started-)
-  - [Prerequisites](#prerequisites)
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started ](#-getting-started-)
   - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Authors ](#authors-)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
+- [👥 Authors](#authors)
+- [🔭 Future Features ](#-future-features-)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-## 📖 Budget Tracker Application<a name="about-project"></a> is a web-based budgeting application built using Ruby on Rails and PostgreSQL. This application allows users to track their income and expenses and provides a visual representation of their budget. Users can add or remove income and expenses, and the application automatically calculates the remaining budget. The website is responsive and optimized for use on desktop and mobile devices
+<!-- PROJECT DESCRIPTION -->
+
+# 📖Blog App <a name="about-project"></a>
+
+**The Blog app will be a classic example of a blog website.**
 
 ## 🛠 Built With <a name="built-with"></a>
 
-## Tech Stack <a name="tech-stack"></a>
+### Tech Stack <a name="tech-stack"></a>
 
-- [Ruby](https://www.ruby-lang.org/en/)
-- [Ruby on Rails](https://rubyonrails.org/)
-- [PostgreSQL](https://www.postgresql.org/)
+<details>
+<summary>Ruby</summary>
+  <ul>
+    <li><a href="#">Ruby on Rails</a></li>
+  </ul>
+</details>
 
-## Key Features
+<!-- Features -->
 
-- [ ] **Register an account**
-- [ ] **Login registered account**
-- [ ] **Create categories and transactions**
+### Key Features <a name="key-features"></a>
 
+- **Adding comments**
+- **Create Ruby on Rails project**
+- **Creating a data model**
+- **Validations and Model specs**
+- **Processing data in models**
+- **Setup and controllers**
+- **Controllers specs**
+- **Views**
+- **Forms**
+- **Integration specs for Views and fixing n+1 problems**
+- **Adding devise**
+- **Adding sign up form**
+- **Adding log in form**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+### Prerequisites <a name="prerequisites"></a>
+
+In order to run this project you need a Chrome, Safari or Mozilla browser
+
 To get a local copy up and running, follow these steps.
 
-## Prerequisites
-
-In order to run this project you need to install the following on your machine:
-- [Ruby](https://www.ruby-lang.org/en/)
-- [Ruby on Rails](https://rubyonrails.org/)
-- [PostgreSQL](https://www.postgresql.org/)
-
-## Setup
+### Setup
 
 Clone this repository to your desired folder:
 
-Example commands:
-
-- 1. Clone this repository using GitBash or the command Terminal:
-
 ```sh
-git clone https://github.com/jodavid444/Budget-Tracker-Application.git
-
- cd Budget-Tracker-Application
+  cd <desired-folder>
+  git clone https://github.com/batoorsohail/blog-app.git
 ```
 
-## Install
-
-- 2. Inside the project directory, install the project's dependencies:
+### Install <a name="install"></a>
 
 ```sh
-  bundle install (install all dependencies)
+  cd blog-app
+  bundle install
 ```
 
-3. Create the app's database
+### Usage <a name="usage"></a>
 
 ```sh
-rails db:create
+  rails s
 ```
-   
-4. Setup the app's database
-  
-```sh
- rails db:setup
-```
-## Usage
+
+### Test <a name="test"></a>
 
 ```sh
-rails server
+  rspec spec
 ```
-- Runs the app local server
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Authors <a name="authors"></a>
+<!-- AUTHORS -->
 
-👤 **Joseph David**
+## 👥 Authors <a name="authors"></a>
 
-- GitHub: [@jodavid444](https://github.com/jodavid444)
+### 👤 **Sohail Batoor**
 
-- Twitter: [@jodavid444dave](https://twitter.com/jodavid444dave)
-
-- LinkedIn: [@joseph-david](https://www.linkedin.com/in/joseph-david-/)
+- GitHub: [@batoorsohail](https://github.com/batoorsohail)
+- Twitter: [@twitter](https://twitter.com/sohailBatoor)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sohail-batoor-52429b230/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Create a user profile]**
-- [ ] **[Create a desktop version]**
+We will add features that users can delete comments.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/jodavid444/Budget-Tracker-Application/issues).
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please leave a star. Thank you 🙏
+If you like this project please give it a start.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- I would like to thank Microverse for the great project idea. ❤️
- - Credit goes to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) whose original design was used.
+I would like to thank Microverse for providing this opportunity for us.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
