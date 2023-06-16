@@ -38,7 +38,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Adding comments**
 - **Create Ruby on Rails project**
 - **Creating a data model**
 - **Validations and Model specs**
@@ -69,7 +68,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd <desired-folder>
-  git clone https://github.com/batoorsohail/blog-app.git
+  git clone https://github.com/batoorsohail/budget-app.git
 ```
 
 ### Install <a name="install"></a>
@@ -107,7 +106,7 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-We will add features that users can delete comments.
+We will add features that users can edit categories.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
