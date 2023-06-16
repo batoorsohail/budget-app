@@ -8,7 +8,7 @@
 <p class="notice-msg"><%= notice %></p>
 <div class="category">
   <div class="category-item-info">
-    <img src="<%= @category.icon%>" class='category-icon'>
+    <img src="<%= @category.icon %>" class='category-icon'>
     <h3><%= @category.name %></h3>
   </div>
     <h4 class="total-amount">Total amount: <span>$<%= @category.entities.sum(:amount)%></span></h4>
