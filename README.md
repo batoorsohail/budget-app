@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# Blog App
+# Budget App
 
 # 📗 Table of Contents
 
@@ -19,9 +19,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖Blog App <a name="about-project"></a>
+# 📖Budget App <a name="about-project"></a>
 
-**The Blog app will be a classic example of a blog website.**
+**Budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.**
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -38,7 +38,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Adding comments**
 - **Create Ruby on Rails project**
 - **Creating a data model**
 - **Validations and Model specs**
@@ -47,10 +46,9 @@
 - **Controllers specs**
 - **Views**
 - **Forms**
-- **Integration specs for Views and fixing n+1 problems**
-- **Adding devise**
-- **Adding sign up form**
-- **Adding log in form**
+- **Register and log in, so that the data is private to them**
+- **Introduce new transactions associated with a category**
+- **See the money spent on each category**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,7 +68,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd <desired-folder>
-  git clone https://github.com/batoorsohail/blog-app.git
+  git clone https://github.com/batoorsohail/budget-app.git
 ```
 
 ### Install <a name="install"></a>
@@ -108,7 +106,7 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-We will add features that users can delete comments.
+We will add features that users can edit categories.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
