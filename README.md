@@ -47,10 +47,9 @@
 - **Controllers specs**
 - **Views**
 - **Forms**
-- **Integration specs for Views and fixing n+1 problems**
-- **Adding devise**
-- **Adding sign up form**
-- **Adding log in form**
+- **Register and log in, so that the data is private to them**
+- **Introduce new transactions associated with a category**
+- **See the money spent on each category**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
