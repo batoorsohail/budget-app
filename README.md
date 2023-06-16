@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# Blog App
+# Budget App
 
 # 📗 Table of Contents
 
@@ -19,9 +19,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖Blog App <a name="about-project"></a>
+# 📖Budget App <a name="about-project"></a>
 
-**The Blog app will be a classic example of a blog website.**
+**Budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.**
 
 ## 🛠 Built With <a name="built-with"></a>
 
