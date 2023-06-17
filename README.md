@@ -132,7 +132,7 @@ If you like this project please give it a start.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for providing this opportunity for us.
+ I want to thank Microverse for providing me with learning materials, [Gregoire Vella](https://www.behance.net/gregoirevella) for the original design idea, and my peers for helping me move forward.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
