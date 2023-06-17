@@ -52,6 +52,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Video Presentation
+- [Video Presentation](https://www.loom.com/share/5d1723651c5d4eecb7999d938229ce9b)
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -132,7 +135,7 @@ If you like this project please give it a start.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for providing this opportunity for us.
+ I want to thank Microverse for providing me with learning materials, [Gregoire Vella](https://www.behance.net/gregoirevella) for the original design idea, and my peers for helping me move forward.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
