@@ -55,7 +55,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo](https://budget-tracker-azmz.onrender.com/)
+N/A
 
 ### Video Presentation
 
