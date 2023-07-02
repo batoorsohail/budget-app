@@ -57,10 +57,6 @@
 
 N/A
 
-### Video Presentation
-
-- [Video Presentation](https://www.loom.com/share/5d1723651c5d4eecb7999d938229ce9b)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
