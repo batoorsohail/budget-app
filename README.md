@@ -78,23 +78,30 @@ Clone this repository to your desired folder:
   git clone https://github.com/batoorsohail/budget-app.git
 ```
 
-### Install <a name="install"></a>
+To install dependencies, run:
+ 
+``` sh
+bundle install
+```
+To set up the database, run:
 
-```sh
-  cd blog-app
-  bundle install
+``` sh
+rails db:create
+```
+``` sh
+rails db:migrate
 ```
 
-### Usage <a name="usage"></a>
-
-```sh
-  rails s
+### Usage
+To run the server, execute the following command:
+``` sh
+rails s
 ```
 
-### Test <a name="test"></a>
-
-```sh
-  rspec spec
+### Run Tests
+To run tests, run the following commands:
+``` sh
+rspec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
