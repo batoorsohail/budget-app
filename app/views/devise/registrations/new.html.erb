@@ -1,0 +1,33 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <nav class="nav-bar">
+    <a href="../" class="back-link"><i class='fa-solid fa-arrow-left fa-2x'></i></a>
+    <h2>REGISTER</h2>
+    <div class="actions">
+      <%= f.submit "Next" %>
+    </div>
+  </nav>
+  <div class="home-input">
+    <div class="field">
+      <%= f.text_field :name, autofocus: true, placeholder: 'Full Name' %>
+    </div>
+
+    <div class="field">
+      <%= f.email_field :email, autocomplete: "email", placeholder: 'Email' %>
+    </div>
+
+
+    <div class="field">
+      <% if @minimum_password_length %>
+      <% end %>
+      <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password' %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Password Confirmation' %>
+    </div>
+  </div>
+<% end %>
+<div class="home-links">
+  <%= render "devise/shared/links" %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+</div>
